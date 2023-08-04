@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  width: 100%;
+  background: url('https://assets.codepen.io/6060109/ZigZag.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.panel{
+  position: relative;
+  width: 390px;
+  height: 600px;
+  background-color: white;
+  margin: 90px 0;
+  border-radius: 5px;
+  box-shadow: 0px 40px 40px -20px #3C7B61;
+  z-index: 9;
+
+}
+
+.first-panel,.third-panel {
+  display: none;
+}
+
+.close-button{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.inner-container{
+  text-align: center;
+  padding: 55px 40px;
+}
+
+.happy-image{
+  width:110px;
+}
+
+h2,p, h5, h6, #change{
+  font-family: 'Montserrat';
+}
+
+.inner-container > h2{
+  color: #2F463D;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+
+}
+
+.inner-container > p {
+  font-family: 'Ubuntu';
+  color: #828282;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.food-selection{
+  display: flex;
+  margin: 40px auto;
+  width: 95%;
+  height: 66px;
+  background-color: #F0FFF5;
+  border-radius: 5px;
+}
+
+.burger-pic {
+  width: 54px;
+}
+
+.food-content{
+  min-width: 300px;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+
+.food-content > h5 {
+  color: #2F463D;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.food-content > h6 {
+  color: #7A8F85;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#change {
+  position: absolute;
+  color: #467A66;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-left: 220px;
+}
+
+.order-button{
+  width: 95%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #46A67E;
+  border: none;
+  box-shadow: 0px 20px 20px 0px rgba(103, 189, 153, 0.20);
+  color: white;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 800;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: .3s ease all;
+}
+
+.order-button:hover{
+  opacity: .8;
+  transition: .3s ease all;
+  cursor: pointer;
+}
+
+.circles{
+    display: flex;
+  width: 15%;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  transform: translateX(-50%);
+}
+
+.circle{
+  width: 8px;
+  height: 8px;
+  background-color: #E0E0E0;
+  border-radius: 100%;
+}
+
+.green.circle{
+  background-color: #67BD99;
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .all-container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .first-panel{
+    display:initial;
+  }
+  
+  .third-panel {
+    display:initial;
+  }
+  
+  .burger-image{
+    width: 110px;
+  }
+  
+  .first-inner-container > p {
+    margin: 35px auto;
+  }
+  
+  .first-inner-container > .order-button{
+    margin: 30px auto;
+  }
+  
+  .delivery-image{
+    width:110px;
+  }
+  
+  .third-inner-container > p {
+    margin: 35px auto;
+  }
+  
+  .third-inner-container > .order-button{
+    margin: 30px auto;
+  }
+
+
+  .grey-button{
+    background: var(--gray-4, #BDBDBD);
+    box-shadow: 0px 20px 20px 0px rgba(167, 167, 167, 0.20);  
+  }
+  
+  .first-panel, .third-panel{
+    height: 550px;
+    transform: translateY(+1%);
+    z-index: 1;
+     
+  }
+  
+  .second-panel{
+    width: 400px;
+  }
+  
+  .first-panel{
+    margin-right: -23px;
+  }
+  
+  .third-panel{
+    margin-left: -23px;
+  }
+
+
+  
+}
+  
+
